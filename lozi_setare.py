@@ -1,3 +1,11 @@
 n = int(input())
-for i in range(n//2+1):
-    print((n - (i*2+1))//2*" " + (i*2+1)*"*" + (n - (i*2+1))//2*" ")
+for i in range(n):
+    if i < n//2+1:
+        space = (n - (i*2+1))//2
+        star = (i*2+1)
+
+        print(space*" " + star*"*" + space*" ")
+    else:
+        space = (i-n//2)
+        star = (i*2+1)
+        print(space*" " + star*"*" + space*" ")
